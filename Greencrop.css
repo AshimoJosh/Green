@@ -1,0 +1,146 @@
+main{
+    display: grid;
+    /* grid-template-columns: auto auto auto auto auto auto; */
+    grid-template-columns: repeat(5, 1fr);
+   
+    justify-content: center;
+
+}
+section {
+  background-color: #03d90a;
+}
+header {
+  font-weight: 500;
+  padding: 1%;
+  background-image: url(./g2.jpg);
+  object-fit: cover;
+  background-color: #147b02;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  animation: change 40s infinite ease-in-out;
+}
+
+@keyframes change {
+  0% {
+    background-image: url(g1.jpg);
+  }
+  20% {
+    background-image: url(f1.jpg);
+  }
+  /* you can add this continously with percentage */
+}
+
+.tophead {
+  position: relative;
+  font-size: 6vw;
+  padding-top: 10px;
+
+  background-image: linear-gradient(180deg, #03d90a, rgb(7, 248, 7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* 
+    margin-left: 30%; */
+  margin-top: 2%;
+  color: rgb(248, 241, 241);
+}
+
+.navtop {
+ /* position: absolute; */
+  /* text-align: left; */
+  font-size: 1.5vw;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  gap:90px;
+  /* margin-left: 70%; */
+}
+.navtop a {
+  color: aliceblue;
+}
+a:hover {
+  color: rgb(35, 186, 35);
+  text-decoration: underline;
+}
+
+.contain {
+
+  text-align: center;
+  border:1px solid rgb(3, 218, 35);
+  width: 300px;
+  border-radius: 20px;
+  margin-left: 5%;
+  padding: 10px;
+  box-shadow: 4px 8px 5px grey;
+  float: left;
+  margin: 30px 15px;
+}
+
+.hoto {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 20vw;
+  transition: 1s;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  scroll-behavior: smooth;
+}
+
+p {
+  margin-left: 5px;
+}
+.texts {
+  border: 1px solid black;
+  margin-bottom: 8px;
+}
+
+button {
+  padding: 7px 30px;
+  border: none;
+  border-radius: 7px;
+  /* background-color: #03d90a; */
+  background-image: linear-gradient(180deg, #03d90a, green);
+  box-shadow: 1px 2px 15px #03d90a;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.navfoot {
+  font-size: 1.5vw;
+}
+/* footer{
+    
+    font-weight: 500;
+    padding: 1%;
+    background-color: antiquewhite;
+ background-image:linear-gradient(180deg, #03d90a, green) ; 
+  } */
+
+footer {
+  padding: 29px 0;
+  text-align: center;
+  position: relative;
+  /* margin-top: 100%; */
+  border: 3px solid#03d90a;
+}
+footer h1 {
+  margin-top: -1px;
+  color: rgb(1, 93, 27);
+  text-decoration: underline;
+}
+a {
+  color: rgb(30, 129, 11);
+}
+
+.icons {
+  width: 20px;
+  border: 2px solid white;
+  border-radius: 100px;
+  color: #dcdcdc;
+  background-color: #e1f4f1;
+}

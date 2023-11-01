@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+ 
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./c3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  float: left;
+  margin: 1%;
+  
+}
+
+small{
+  font-size:xx-large;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 30px 30px 30px 30px;
+  height: 110vw;
+  width: 50vw;
+  background-color: rgba(4, 97, 35, 0.6);
+  border-radius: 30px;
+  backdrop-filter: blur(9px);
+}
+
+.boxlog {
+  position: absolute;
+  width: 85%;
+  left: 20px;
+  transition: 0.5 ease-in-out;
+
+}
+
+
+
+
+.tophead {
+    color: aliceblue;
+  text-align: center;
+}
+
+.inputgroup {
+  width: 100%;
+}
+
+.inputfield {
+  margin: 12px 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.inputbox {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  padding: 10px 0px 0 20px;
+  border: none;
+  font-weight: 700;
+  backdrop-filter: blur(4px);
+  background-color: rgb(240, 248, 255, .8);
+}
+
+.inputfield label {
+  color: rgb(8, 72, 1);
+  position: absolute;
+  left: 20px;
+  font-size: 17px;
+  top: 15px;
+  transition: 0.4 ease-in-out;
+}
+.inputbox:focus ~ label,
+.inputbox:valid ~ label {
+  top: -15px;
+  font-size: 12px;
+  color: rgb(206, 239, 217);
+  font-weight: 600;
+}
+
+.remember {
+  display: flex;
+  margin-bottom: 40px;
+  color: rgb(240, 248, 255);
+}
+
+.check {
+  margin-right: 10px;
+}
+
+.inputsub {
+  text-align: center;
+  border-radius: 15px;
+  margin-left: 20%;
+  border: none;
+  background-color: rgb(240, 248, 255, .8);
+  background-color: rgb(12, 236, 38);
+  padding: 10px 70px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.forgot {
+  color: white;
+  text-align: center;
+}
+.forgot a {
+  color: rgb(6, 254, 10);
+  text-decoration: none;
+}
+
+
+
+.box2 {
+  display: flex;
+  position: relative;
+  padding: 30px 0px 30px 30px;
+  height: 110vw;
+  left: 10px;
+  width: 50vw;
+  background-color: rgba(4, 97, 35, 0.6);
+  border-radius: 30px;
+  backdrop-filter: blur(9px);
+    
+}
+#signup{
+  
+      position: absolute;
+      width: 85%;
+      left: 20px;
+      transition: 0.5 ease-in-out;
+     
+}
